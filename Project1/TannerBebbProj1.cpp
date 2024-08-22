@@ -102,8 +102,20 @@ int main()
 
 int binary_to_decimal(string s) {
 
-    //Convert the string into an integer data type so that I can properly convert it.
+    //Convert the string into an integer data type. So, s is now an integer.
     stoi(s);
+
+    int sum = 0;
+    int idx = 0;
+
+    for (int power = 7; power >= 0; power--) {
+        sum += s[idx] * (pow(2, power));
+        idx++;
+    }
+
+    to_string(sum);
+
+    cout << sum;
 
     return 0;
 }
