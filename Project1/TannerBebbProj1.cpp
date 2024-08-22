@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 #include <cassert>
+#include <cmath>
+#include <sstream>
 
 using namespace std;
 
@@ -102,17 +104,6 @@ int main()
 
 int binary_to_decimal(string s) {
 
-    /*
-    Notes:
-    string s == string b1
-    */
-
-    //00000010 == 2 <-- How do I get this to print out 2?
-    for (int i = 0; i < s.size(); i++) {
-        cout << s[i] << endl;
-    }
-
-    return 0;
 }
 
 string decimal_to_binary(int n) {
