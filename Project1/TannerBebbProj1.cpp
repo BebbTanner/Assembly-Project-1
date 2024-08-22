@@ -102,20 +102,15 @@ int main()
 
 int binary_to_decimal(string s) {
 
-    //Convert the string into an integer data type. So, s is now an integer.
-    stoi(s);
+    /*
+    Notes:
+    string s == string b1
+    */
 
-    int sum = 0;
-    int idx = 0;
-
-    for (int power = 7; power >= 0; power--) {
-        sum += s[idx] * (pow(2, power));
-        idx++;
+    //00000010 == 2 <-- How do I get this to print out 2?
+    for (int i = 0; i < s.size(); i++) {
+        cout << s[i] << endl;
     }
-
-    to_string(sum);
-
-    cout << sum;
 
     return 0;
 }
