@@ -1,7 +1,6 @@
-//  Project description
-//  Your Name
-//  Date starts the project
-
+//  A binary number calculator
+//  Tanner Bebb
+//  August 22nd 2024
 #include <iostream>
 #include <string>
 #include <cassert>
