@@ -102,6 +102,9 @@ int main()
 
 int binary_to_decimal(string s) {
 
+    //Convert the string into an integer data type so that I can properly convert it.
+    stoi(s);
+
     return 0;
 }
 
