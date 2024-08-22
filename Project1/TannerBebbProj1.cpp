@@ -103,7 +103,8 @@ int main()
 }
 
 int binary_to_decimal(string s) {
-
+    // you implement this
+    return 0;
 }
 
 string decimal_to_binary(int n) {
