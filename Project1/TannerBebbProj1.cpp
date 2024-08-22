@@ -101,13 +101,6 @@ int main()
 }
 
 int binary_to_decimal(string s) {
-    
-    /*
-    This is going to give the user a prompt asking them to inupt their binary number.
-    */
-    cout << "Please enter a number you would like to convert from binary to decimal notation: " << endl;
-    cin >> s;
-    cout << "The value you have entered is: " << s << endl;
 
     return 0;
 }
