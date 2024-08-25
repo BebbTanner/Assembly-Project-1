@@ -113,7 +113,11 @@ string decimal_to_binary(int n) {
 }
 
 string add_binaries(string b1, string b2) {
-    // you implement this
+    /**/
+    int num1 = binary_to_decimal(b1);
+    int num2 = binary_to_decimal(b2);
+    int sum = num1 + num2;
+    return decimal_to_binary(sum);
     return "0";
 }
 
@@ -174,17 +178,17 @@ bool test_binary_to_decimal() {
 }
 
 bool test_decimal_to_binary() {
-    if (decimal_to_binary(0) != "0" || decimal_to_binary(1) != "1")
+    if (decimal_to_binary(0) != "00000000" || decimal_to_binary(1) != "00000001")
         return false;
-    if (decimal_to_binary(2) != "10" || decimal_to_binary(13) != "1101")
+    if (decimal_to_binary(2) != "00000010" || decimal_to_binary(13) != "00001101")
         return false;
     return true;
 }
 
 bool test_add_binaries() {
-    if (add_binaries("0", "0") != "0") return false;
-    if (add_binaries("0", "110101") != "110101") return false;
-    if (add_binaries("1", "110111") != "111000") return false;
-    if (add_binaries("101", "111011") != "1000000") return false;
+    if (add_binaries("0", "0") != "00000000") return false;
+    if (add_binaries("0", "110101") != "00110101") return false;
+    if (add_binaries("1", "110111") != "00111000") return false;
+    if (add_binaries("101", "111011") != "01000000") return false;
     return true;
 }
