@@ -5,7 +5,7 @@
 #include <string>
 #include <cassert>
 #include <cmath>
-#include <sstream>
+#include <bitset>
 
 using namespace std;
 
@@ -108,8 +108,8 @@ int binary_to_decimal(string s) {
 }
 
 string decimal_to_binary(int n) {
-    // you implement this
-    return "0";
+    /**/
+    return std::bitset<8>(n).to_string();
 }
 
 string add_binaries(string b1, string b2) {
